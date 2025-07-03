@@ -19,10 +19,10 @@ void Deposite_money(){
 void Withdraw_money(){
     cout<<"Enter the amount:";
     cin>>amount;
-    if(amount<balance&&amount>0){
+    if(amount<=balance&&amount>0){
         balance-=amount;
     }else{
-        cout<<"Ensufficent balance or Invalid amount..!"<<"\n";
+        cout<<"Insufficent balance or Invalid amount..!"<<"\n";
     }
 }
 int main(){
@@ -37,9 +37,9 @@ int main(){
     cin>>userpin;
     if(pin==userpin){
         while(1){
-            cout<<"\nBANK MENUE:"<<"\n";
+            cout<<"\nBANK MENU:"<<"\n";
             cout<<"1.Display Bank Balance"<<"\n";
-            cout<<"2.Deposite money"<<"\n";
+            cout<<"2.Deposit money"<<"\n";
             cout<<"3.Withdraw money"<<"\n";
             cout<<"4.Exit"<<"\n";
             cout<<"Enter your choice:";
